@@ -9,6 +9,7 @@
     "clean": "rm -r node_modules && rm -r js",
     "dist": "sh ./scripts/build.sh",
     "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win",
     "dist:allother": "$SHELL ./scripts/docker.sh",
     "dist:snapcraft": "snapcraft push --release=stable ./dist/Overleaf\\ Desktop-*.snap",
     "dist:all": "npm run dist:allother; npm run dist:mac; npm run dist:snapcraft"
